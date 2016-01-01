@@ -1,0 +1,26 @@
+{
+  "name": "quick-stat",
+  "version": "1.0.0",
+  "description": "Efficient statistics calculations",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reykjavikingur/quick-stat.git"
+  },
+  "keywords": [
+    "math"
+  ],
+  "author": "Andrew Strader",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/reykjavikingur/quick-stat/issues"
+  },
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "should": "~8.0.2",
+    "mocha": "~2.3.4"
+  }
+}
