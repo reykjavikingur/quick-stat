@@ -41,6 +41,16 @@ describe('Set', function() {
 					should(set.variance()).eql(0);
 				});
 			});
+			describe('min', function() {
+				it('should be 5', function() {
+					should(set.min()).eql(5);
+				});
+			});
+			describe('max', function() {
+				it('should be 5', function() {
+					should(set.max()).eql(5);
+				});
+			});
 		});
 
 		describe('sample 5, 6', function() {
@@ -61,6 +71,16 @@ describe('Set', function() {
 			describe('variance', function() {
 				it('should be 0.25', function() {
 					should(set.variance()).eql(0.25);
+				});
+			});
+			describe('min', function() {
+				it('should be 5', function() {
+					should(set.min()).eql(5);
+				});
+			});
+			describe('max', function() {
+				it('should be 6', function() {
+					should(set.max()).eql(6);
 				});
 			});
 		});
