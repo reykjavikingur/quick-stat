@@ -36,6 +36,15 @@ describe('VectorSet', function() {
 			it('should have mean of [5,6]', function() {
 				should(vset.mean()).eql([5, 6]);
 			});
+			it('should have min of [5,6]', function() {
+				should(vset.min()).eql([5, 6]);
+			});
+			it('should have max of [5,6]', function() {
+				should(vset.max()).eql([5, 6]);
+			});
+			it('should have variance of 0', function(){
+				should(vset.variance()).eql(0);
+			});
 		});
 
 		describe('sample [5,6], [9,3]', function() {
@@ -51,6 +60,16 @@ describe('VectorSet', function() {
 			describe('mean', function() {
 				it('should be correct', function() {
 					should(vset.mean()).eql([7, 4.5]);
+				});
+			});
+			describe('min', function() {
+				it('should be correct', function() {
+					should(vset.min()).eql([5, 3]);
+				});
+			});
+			describe('max', function() {
+				it('should be correct', function() {
+					should(vset.max()).eql([9, 6]);
 				});
 			});
 		});
